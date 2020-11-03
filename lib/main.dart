@@ -33,41 +33,35 @@ class ProfilePage extends StatelessWidget {
                 fontFamily: 'Source Sans Pro',
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.phone,
+            ListTile(
+              leading: Icon(
+                Icons.phone,
+                color: Colors.white,
+                size: 40.0,
+              ),
+              title: Text(
+                '040 8544833',
+                style: TextStyle(
                   color: Colors.white,
-                  size: 40.0,
+                  fontSize: 20.0,
+                  fontFamily: 'Source Sans Pro',
                 ),
-                Text(
-                  '040 8544833',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    fontFamily: 'Source Sans Pro',
-                  ),
-                ),
-              ],
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.email,
+            ListTile(
+              leading: Icon(
+                Icons.email,
+                color: Colors.white,
+                size: 40.0,
+              ),
+              title: Text(
+                'viljami@email.fi',
+                style: TextStyle(
                   color: Colors.white,
-                  size: 40.0,
+                  fontSize: 20.0,
+                  fontFamily: 'Source Sans Pro',
                 ),
-                Text(
-                  'viljami@email.fi',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20.0,
-                    fontFamily: 'Source Sans Pro',
-                  ),
-                ),
-              ],
+              ),
             ),
           ],
         ),
