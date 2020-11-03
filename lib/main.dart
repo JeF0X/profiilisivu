@@ -9,18 +9,66 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.orange,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image(
-              image: AssetImage('images/img_profile.jpg'),
+            CircleAvatar(
+              maxRadius: 80.0,
+              backgroundImage: AssetImage('images/img_profile.jpg'),
             ),
             Text(
               'Viljami',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30.0,
+                fontFamily: 'Kaushan Script',
+              ),
             ),
-            Text('Best cat in the world'),
-            Text('040 8544833'),
-            Text('viljami@email.fi'),
+            Text(
+              'Best cat in the world',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20.0,
+                fontFamily: 'Source Sans Pro',
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.phone,
+                  color: Colors.white,
+                  size: 40.0,
+                ),
+                Text(
+                  '040 8544833',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Pro',
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.email,
+                  color: Colors.white,
+                  size: 40.0,
+                ),
+                Text(
+                  'viljami@email.fi',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontFamily: 'Source Sans Pro',
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
